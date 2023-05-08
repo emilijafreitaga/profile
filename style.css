@@ -1,17 +1,25 @@
 body {
-  background-color: #DFD3C3;
+  background-color: #5C5470;
+  /* background-image: url("https://images.pexels.com/photos/6634140/pexels-photo-6634140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
+  background-image: url("https://i.pinimg.com/564x/74/e8/72/74e872860f980040cb4e49778be1e5db.jpg");
+  background-repeat: repeat-x;
+  background-position: 100%;
+  object-fit: cover;
   color: #0c0a07;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Tenor Sans', sans-serif;
   font-size: 16px;
 }
 
-h1, h2 {
-  color: #85586F;
+h1,
+h2 {
+  color: rgb(92, 84, 112);
   font-weight: 500;
+  font-size: 24px;
+
 }
 
 p {
-  color: #553544;
+  color: #352F44;
   font-weight: 400;
 }
 
@@ -21,40 +29,44 @@ p {
 }
 
 .card {
-  background-color: #f9f3ed;
-  width: 550px;
+  background-color: rgba(219, 216, 227, 0.7);
+  width: 500px;
   height: 0 auto;
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 20px 80px 30px 80px;
-  box-shadow: 5px 5px 5px rgba(133, 88, 111, 0.1);
+  box-shadow: 5px 5px 20px rgba(67, 40, 54, .3);
+  /* box-shadow: 10px 10px 5px 12px lightblue */
+  /* box-shadow: 5px 5px 5px 5px rgba(111, 86, 187, 1) */
   text-align: center;
 }
 
 #profile-pic {
-  height: 180px;
-  width: 180px;
+  height: 190px;
+  width: 190px;
   border-radius: 50%;
-  border: 3px solid #a26f8a;
-  filter: blur(2px);
+  border: 3px solid #3a314f;
+  object-fit: cover;
+  transition: 2s;
 }
 
-#profile-pic:hover {
-  filter: blur(0px);
-}
+/* #profile-pic:hover { */
+  /* filter: blur(5px); */
+/* } */
 
 .link {
   text-decoration: none;
   font-style: italic;
 }
 
-.my-link{
+.my-link {
   text-decoration: none;
 }
 
 .button {
-  background-color: #846676;
+  background-color: #5C5470;
   border: none;
+  border-radius: 5px;
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -65,14 +77,15 @@ p {
 }
 
 .button:hover {
-  background-color: #3e2633;
+  background-color: #352F44;
 }
 
-.list-inline{
+.list-inline {
   list-style: none;
-  padding: 0px;
+  padding: 0px 20px;
   display: inline-block;
 }
+
 
 @media (max-width: 960px) {
   .container {
@@ -92,26 +105,23 @@ p {
   }
 }
 
-/* .img { */
+.img-container {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+}
 
-  /* position: absolute; */
+.img {
+  position: absolute;
+}
 
-  /* } */
+.hover_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
 
-  /* .hover_img { */
-
-    /* position: absolute; */
-
-    /* top: 0;
-
-    left: 0;
-
-    display: none;
-
-    } */
-
-    /* .img:hover .hover_img {
-
-      display: inline;
-
-      } */
+.img:hover .hover_img {
+  display: inline;
+}
