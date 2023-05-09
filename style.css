@@ -2,8 +2,8 @@ body {
   background-color: #5C5470;
   /* background-image: url("https://images.pexels.com/photos/6634140/pexels-photo-6634140.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); */
   background-image: url("https://i.pinimg.com/564x/74/e8/72/74e872860f980040cb4e49778be1e5db.jpg");
-  background-repeat: repeat-x;
-  background-position: 100%;
+  background-position: center;
+  background-size: cover;
   object-fit: cover;
   color: #0c0a07;
   font-family: 'Tenor Sans', sans-serif;
@@ -35,9 +35,7 @@ p {
   margin: 0 auto;
   margin-bottom: 20px;
   padding: 20px 80px 30px 80px;
-  box-shadow: 5px 5px 20px rgba(67, 40, 54, .3);
-  /* box-shadow: 10px 10px 5px 12px lightblue */
-  /* box-shadow: 5px 5px 5px 5px rgba(111, 86, 187, 1) */
+  box-shadow: 5px 5px 15px rgba(67, 40, 54, .3);
   text-align: center;
 }
 
@@ -61,6 +59,7 @@ p {
 
 .my-link {
   text-decoration: none;
+  text-shadow: 1px 1px 1px #5C5470;
 }
 
 .button {
